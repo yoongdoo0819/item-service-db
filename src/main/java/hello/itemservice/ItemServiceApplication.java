@@ -29,6 +29,7 @@ public class ItemServiceApplication {
 		return new TestDataInit(itemRepository);
 	}
 
+	/*
 	@Bean
 	@Profile("test")
 	public DataSource dataSource() {
@@ -40,4 +41,6 @@ public class ItemServiceApplication {
 		dataSource.setPassword("");
 		return dataSource;
 	}
+
+	 */
 }
