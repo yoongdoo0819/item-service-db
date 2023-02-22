@@ -1,5 +1,6 @@
 package hello.itemservice;
 
+import hello.itemservice.config.JpaConfig;
 import hello.itemservice.config.MyBatisConfig;
 import hello.itemservice.repository.ItemRepository;
 import hello.itemservice.config.JdbcTemplateV1Config;
@@ -16,7 +17,7 @@ import javax.sql.DataSource;
 
 @Slf4j
 //@Import(MemoryConfig.class)
-@Import(MyBatisConfig.class)
+@Import(JpaConfig.class)
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web")
 public class ItemServiceApplication {
 
