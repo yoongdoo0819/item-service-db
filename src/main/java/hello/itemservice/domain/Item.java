@@ -2,7 +2,10 @@ package hello.itemservice.domain;
 
 import lombok.Data;
 
+import javax.persistence.Entity;
+
 @Data
+@Entity
 public class Item {
 
     private Long id;
